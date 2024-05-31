@@ -1,0 +1,64 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* ESTILO GERAL */
+/*------Menu------*/
+
+header {
+    padding: 20px 4%;
+}
+
+.Menu_Principal {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu-desktop{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .menu-desktop ul{
+    list-style: none;
+}
+
+header .menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .menu-desktop a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #242222;
+    transform: scale(1.05);
+}
+
+.logo h3 {
+    font-size: 25px;
+}
+.logo span {
+    color: rgb(255, 0, 0);
+}
+.logo i {
+    color: rgb(255, 0, 0)
+}
