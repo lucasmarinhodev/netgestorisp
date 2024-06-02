@@ -1,18 +1,17 @@
 /* ESTILO GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+#fdfdfb
 body {
     height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
 
-
-/* ESTILO GERAL */
 /*------Menu------*/
-
 header {
     padding: 20px 4%;
 }
@@ -23,29 +22,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Poppins", sans-serif;
+    border: 1px solid black;
+
 }
 
-.menu-desktop{
+.menu-desktop {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-header .menu-desktop ul{
+header .menu-desktop ul {
     list-style: none;
 }
 
 header .menu-desktop ul li {
     display: inline-block;
-    padding: 0 40px;
+    position: relative;
 }
 
 header .menu-desktop a {
     color: black;
-    text-decoration: none;
     display: inline-block;
     transition: .2s;
+    padding: 20px;
+    text-decoration: none;
 }
 
 header a:hover {
@@ -56,9 +57,47 @@ header a:hover {
 .logo h3 {
     font-size: 25px;
 }
+
 .logo span {
     color: rgb(255, 0, 0);
 }
+
 .logo i {
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.drop-hover {
+    position: relative;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.drop-hover:hover .drop {
+    display: block;
+}
+
+.drop a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+.drop a:hover {
+    background-color: #f1f1f1;
 }
