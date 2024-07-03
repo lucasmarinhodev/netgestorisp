@@ -3,9 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-#fdfdfb
+
 body {
     height: 100vh;
     font-family: "Poppins", sans-serif;
@@ -13,7 +12,9 @@ body {
 
 /*------Menu------*/
 header {
-    padding: 20px 4%;
+    padding: 5px 4%;
+    border-bottom: 8px solid;
+    border-image: linear-gradient(to right, #d6d9fd, #3044fc) 1;
 }
 
 .Menu_Principal {
@@ -22,8 +23,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-
 }
 
 .menu-desktop {
@@ -54,22 +53,6 @@ header a:hover {
     transform: scale(1.05);
 }
 
-.logo h3 {
-    font-size: 25px;
-}
-
-.logo span {
-    color: rgb(255, 0, 0);
-}
-
-.logo i {
-    color: rgb(255, 0, 0);
-}
-
-.logo a {
-    text-decoration: none;
-}
-
 .drop-hover {
     position: relative;
 }
@@ -86,10 +69,6 @@ header a:hover {
     width: 100%;
 }
 
-.drop-hover:hover .drop {
-    display: block;
-}
-
 .drop a {
     display: block;
     padding: 10px 20px;
@@ -100,4 +79,24 @@ header a:hover {
 
 .drop a:hover {
     background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+.drop-hover:hover .drop {
+    display: block;
+}
+
+/* Estilo para a seta */
+.drop-hover > a {
+    display: flex;
+    align-items: center;
+}
+
+.drop-hover > a .bi {
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.drop-hover:hover > a .bi {
+    transform: rotate(180deg);
 }
