@@ -100,3 +100,43 @@ header a:hover {
 .drop-hover:hover > a .bi {
     transform: rotate(180deg);
 }
+
+/* Menu ONU  */
+
+.menu-onu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 4%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.onu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(16.666% - 40px);
+    min-width: 150px;
+}
+
+.quantidade-onu {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.quantidade {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.onu i {
+    font-size: 40px;
+}
+
+/* Menu ONU  FIM*/
